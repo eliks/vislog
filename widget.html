@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+  <!-- Basic Page Needs
+ ================================================== -->
+  <meta charset="utf-8" />
+  <title>Visitor's Log Widget</title>
+  <meta name="description" content="Visitor\'s Log Page for MEST">
+  <meta name="author" content="">
+  <!--<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">-->
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+  <!-- CSS
+ ================================================== -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/docs.css">
+  <link rel="shortcut icon" href="assets/ico/favicon.ico">
+  <script src="assets/js/jquery.js" type="application/javascript"></script>
+  <script src="assets/js/visitorSubmit.js" type="application/javascript"></script>
+
+</head>
+
+<body>
+	
+	<div id="mywidget">
+		<div id="whead">
+			You are welcome, please log your visit
+		</div>
+		<form method="POST">
+			<div class="span6">
+				<div class="control-group input-prepend">
+					<span class="add-on myaddon" style="width: 80px;">Full name</span>
+					<input id="fullname" name="fullname" type="text" placeholder="e.g. John Dazie" class="input-xlarge wid347 span4">
+				</div></div><div class="span6">
+				<div class="control-group input-prepend">
+					<span class="add-on myaddon" style="width: 80px;">Coming From</span>
+					<input id="cfrom" name="cfrom" type="text" placeholder="e.g. Dropifi PLC, Ghana" class="input-xlarge wid347 span4">
+				</div></div>
+				<div class="span6">
+					<div class="control-group input-prepend">
+						<span class="add-on myaddon" style="width: 80px;">Email</span>
+						<input id="email" name="email" type="text" placeholder="e.g. someaddress@mymail.com" class="input-xlarge wid347 span4">
+					</div>
+				</div>
+				<div class="span6">
+					<div class="control-group input-prepend">
+						<span class="add-on myaddon" style="width: 80px;">Phone number</span>
+						<input id="pnumber" name="pnumber" type="text" placeholder="e.g. 02123456789" class="input-xlarge wid347 span4">
+					</div>
+				</div>
+				<div class="span6">
+					<div class="control-group input-prepend">
+						<span class="add-on myaddon">Host's name</span>
+						<input id="hname" name="hname" type="text" placeholder="e.g. Mr. Rich Tanksley" class="input-xlarge wid347 span4">
+					</div>
+				</div>
+				<div class="span6" id="schduleinput">
+					<div class="control-group input-prepend">
+						<span class="add-on myaddon">Time - Date</span>
+						<input id="whentime" name="whentime" type="time" class="input-xlarge span3">
+						<!--<select id="whentime" name="whentime" class="input-xlarge wid347 span3">
+						  <option value="08 00 00">08:00 GMT</option>
+						  <option value="08 30 00">08:30 GMT</option>
+						  <option value="09 00 00">09:00 GMT</option>
+						  <option value="09 30 00">09:30 GMT</option>
+						  <option value="10 00 00">10:00 GMT</option>
+						  <option value="10 30 00">10:30 GMT</option>
+						  <option value="11 00 00">11:00 GMT</option>
+						  <option value="11 30 00">11:30 GMT</option>
+						  <option value="12 00 00">12:00 GMT</option>
+						  <option value="12 30 00">12:30 GMT</option>
+						  <option value="13 00 00">13:00 GMT</option>
+						  <option value="13 30 00">13:30 GMT</option>
+						  <option value="14 00 00">14:00 GMT</option>
+						  <option value="14 30 00">14:30 GMT</option>
+						  <option value="15 00 00">15:00 GMT</option>
+						  <option value="15 30 00">15:30 GMT</option>
+						  <option value="16 00 00">16:00 GMT</option>
+						  <option value="16 30 00">16:30 GMT</option>
+						  <option value="17 00 00">17:00 GMT</option>
+						  <option value="17 30 00">17:30 GMT</option>
+						  <option value="18 00 00">18:00 GMT</option>
+						  <option value="18 30 00">18:30 GMT</option>
+						</select> -->
+						<input id="whendate" name="whendate" type="datetime-local" class="input-xlarge span3">
+					</div>
+				</div>
+				<div class="span6" id="accountinput">
+					<div class="control-group input-prepend">
+						<span class="add-on myaddon">Use my</span>
+						<select id="account" name="account" class="input-xlarge wid347 span4">
+						  <option value="facebook">Facebook account</option>
+						  <option value="twitter">Twitter account</option>
+						  <option value="linkedin">Linkedin account</option>
+						  <option value="email">Gmail account</option>
+						  <option value="noaccount"> -- </option>
+						</select>
+					</div>
+				</div>
+					<div class="span6">
+						<div class="control-group input-prepend">
+							<span class="add-on myaddon">Purpose</span>
+							<input id="purpose" name="purpose" type="text" placeholder="e.g to say hi..." class="input-xlarge wid347 span4">
+						</div>
+						<div class="controls" style="padding-right: 50px;">
+							<button id="reset" type="reset" class="btn btn-primary input-medium pull-right" style="margin-left: 30px;">Clear</button>
+							<button id="contact-submit" type="button" onclick="visitorsubmit();" class="btn btn-primary input-medium pull-right" style="margin-left: 10px;">Submit</button>
+						</div>
+					</div>
+				</form>
+	</div>
+	
+	<div id="mywidget2">
+		<div id="whead">
+			Logget wants to pull data from your Facebook account
+		</div>
+		<div class="span6">
+			<div class="control-group input-prepend">
+				<span class="add-on myaddon" style="width: 80px;">User name</span>
+				<input id="uname" name="uname" type="text" placeholder="e.g. eliskobah17" class="input-xlarge wid347 span4">
+			</div>
+		</div>
+		<div class="span6">
+			<div class="control-group input-prepend">
+				<span class="add-on myaddon" style="width: 80px;">Password</span>
+				<input id="password" name="password" type="password" placeholder="e.g. 02123456789" class="input-xlarge wid347 span4">
+			</div>
+		</div>
+		<div class="controls" style="padding-right: 50px;">
+			<button id="reset" type="reset" class="btn btn-primary input-medium pull-right" style="margin-left: 30px;">Clear</button>
+			<button id="contact-submit" type="button" onclick="visitorsubmit();" class="btn btn-primary input-medium pull-right" style="margin-left: 10px;">Grant access</button>
+		</div>
+	</div>
+	
+	<div id="mywidget3">
+		<div id="whead">
+			Successfully authenticated. Your code is 
+		</div>
+		<div id="codeshow">
+			ki56de
+		</div>
+		<div id="whead">
+			Show it at the security check point. 
+		</div>
+	</div>
+	
+	<div id="mywidget4">
+		
+	</div>
+	
+	<div id="mywidget5">
+		
+	</div>
+	
+	<div id="mywidget6">
+		
+	</div>
+	
+</body>
+
+</html>
