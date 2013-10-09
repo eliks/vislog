@@ -1,6 +1,6 @@
 <?PHP 
 
-	$con = mysql_connect('www.glovefoundation.com', 'elikem', 'james417');
+	$con = mysql_connect('http://www.glovefoundation.com/', 'elikem', 'james417');
 	if (!$con)
 	  {
 	  die('Could not connect: ' . mysql_error());
