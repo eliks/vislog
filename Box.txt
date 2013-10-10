@@ -1,5 +1,5 @@
 db1: #component type & number 
   name: guest           #component settings
-  username: elikem
-  password: james417
+  username: root
+  password: 
   type: mysql
