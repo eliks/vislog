@@ -1,0 +1,206 @@
+#myboard {
+	width: 1100px;
+	height: 560px;
+	border: 1px solid #aeaeae;
+	border-radius: 0px;
+	margin: 100px auto;
+	box-shadow: 0px 0px 20px #0000ff;
+}
+
+.myaddon {
+	width: 100px !important;
+	text-align: right !important;
+}
+
+#whead {
+	width:100%;
+	height:100px;
+	float: left;
+}
+
+#leftpan {
+	width: 240px;
+	height: 460px;
+	float:left;
+	padding-left:20px;
+}
+
+#mainboard {
+	width: 840px;
+	height: 460px;
+	float:left;
+}
+
+.leftpantitle {
+	width:100%;
+	height:20px;
+	font-size:18px;
+	color: #0000ff;
+	float:left;
+	margin: 10px 0 0 0;
+	font-weight:600;
+	padding-top:20px;
+}
+
+.leftpanitem, .leftpanitemselected {
+	width:100%;
+	height: 40px;
+	background-color:whitesmoke;
+	color: #333333;
+	float:left;
+	margin: 10px 0 0 0;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.leftpanitemselected, .leftpanitem:hover {
+	background-color: #8888ff;
+}
+
+.leftpanicon {
+	width: 33px;
+	height: 35px;
+	background-color:#8888ff;
+	float:left;
+	padding:5px 0 0 7px;
+	overflow: hidden;
+}
+
+.leftpantext {
+	width: 180px;
+	height: 40px;
+	color: #8888ff;
+	font-size: 20px;
+	padding: 12px 0 0 15px;
+	/*background-color:whitesmoke;*/
+	float:left;
+}
+
+.myicon {
+	font-size:25px;
+	color: whitesmoke;
+}
+
+#vleftlane {
+	float: left;
+	width: 790px;
+	/*background-color: #dedeff;*/
+	padding: 10px 20px;
+}
+
+#vrightlane {
+	float: left;
+	width: 790px;
+	/*background-color: #ffdeff;*/
+	padding: 10px 20px;
+}
+
+#codeinput {
+	width: 230px;
+	height: 40px;
+	font-size: 24px;
+	margin: 10px 10px;
+	text-align: center;
+}
+
+#codesubmit {
+	width: 244px;
+	height: 30px;
+	font-size: 18px;
+	margin: 0px 10px
+}
+
+#vlefthead {
+	width:100px;;
+	height:40px;
+	font-size:36px;
+	color: #0000ff;
+	float:left;
+	margin: 0px 0 0 10px;
+	font-weight:600;
+	padding-top:30px;
+	vertical-align: middle;
+}
+
+#vrighthead {
+	width:100%;
+	height:20px;
+	font-size:22px;
+	color: #0000ff;
+	float:left;
+	margin: 0px 0 15px 10px;
+	font-weight:600;
+	padding-top:5px;
+}
+
+#vlefthead, #vleftbody {
+	display: inline-block;
+}
+
+#vleftresponse {
+	width:400px;
+	display: inline-block;
+	font-size: 18px;
+	position: relative;
+	top: 12px;
+}
+
+.selectedvtab, .vtab {
+	display: inline-block;
+	text-align:center;
+	background-color:whitesmoke;
+	color: #0000ff;
+	font-size:18px;
+	width:150px;
+	height: 30px;
+	padding-top:7px;
+	cursor: pointer;
+	border-radius: 4px;
+	margin-right: 3px;
+}
+
+.selectedvtab, .vtab:hover {
+	/*background-color:#8888ff;*/
+	border: 1px solid #8888ff;
+	box-shadow: 2px 2px 2px 1px #8888ff;
+	color: black;
+}
+
+.leftpanitemselected .leftpanicon i, .leftpanitemselected .leftpanicon, .leftpanitem:hover .leftpanicon i, .leftpanitem:hover .leftpanicon {
+	background-color: whitesmoke;
+	color: #8888ff;
+}
+
+.leftpanitem:hover .leftpantext, .leftpanitemselected .leftpantext {
+	color: whitesmoke;
+}
+
+.atile {
+	width:150px;
+	height: 150px;
+	border-radius: 5px;
+	border: 1px solid #8888ff;
+	float: left;
+	margin: 40px 0 0 40px;
+}
+
+.atile .atilenum {
+	/*width:80px;*/
+	height: 90px;
+	vertical-align:bottom;
+	margin: 45px auto 10px auto;
+	font-size: 100px;
+	color: #8888ff;
+	text-align:center;
+	float:left;
+}
+
+.atile .atilecap {
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	color: #8888ff;
+	font-size: 30px;
+	float:left;
+	line-height: 100px;
+}

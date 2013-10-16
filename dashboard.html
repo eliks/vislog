@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+  <!-- Basic Page Needs
+ ================================================== -->
+  <meta charset="utf-8" />
+  <title>Visitor's Log Widget</title>
+  <meta name="description" content="Visitor\'s Log Page for MEST">
+  <meta name="author" content="">
+  <!--<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">-->
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+  <!-- CSS
+ ================================================== -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="shortcut icon" href="assets/ico/favicon.ico">
+  <script src="assets/js/jquery.js" type="text/javascript"></script>
+  <script src="assets/js/custom.js" type="text/javascript"></script>
+
+</head>
+
+<body onload="start();">
+	
+	<div id="myboard">
+		<div id="whead">
+			VISITOR LOG ADMINISTRATION DASHBOARD
+		</div>
+		<div id="leftpan">
+			<div class="leftpantitle">
+				Dashboard
+			</div>
+			<div id="verification" class="leftpanitemselected" onclick="switcher('verification');">
+				<div class="leftpanicon">
+					<i class="icon-indent-left myicon"></i>
+				</div>
+				<div class="leftpantext">
+					Verification
+				</div>
+			</div>
+			<div id="customization" class="leftpanitem"  onclick="switcher('customization');">
+				<div class="leftpanicon">
+					<i class="icon-wrench myicon"></i>
+				</div>
+				<div class="leftpantext">
+					Customization
+				</div>
+			</div>
+			<div class="leftpantitle">Logs</div>
+			<div id="visits" class="leftpanitem" onclick="switcher('visits');">
+				<div class="leftpanicon">
+					<i class="icon-user myicon"></i>
+				</div>
+				<div class="leftpantext">
+					Visits
+				</div>
+			</div>
+			<div id="messaging" class="leftpanitem" onclick="switcher('messaging');">
+				<div class="leftpanicon">
+					<i class="icon-envelope myicon"></i>
+				</div>
+				<div class="leftpantext">
+					Messaging
+				</div>
+			</div>
+			<div id="analytics" class="leftpanitem" onclick="switcher('analytics');">
+				<div class="leftpanicon">
+					<i class="icon-signal myicon"></i>
+				</div>
+				<div class="leftpantext">
+					Analytics
+				</div>
+			</div>
+		</div>
+		
+		<div id="mainboard">
+			<div id="verification" class="mainboarder">
+				<div id="vleftlane">
+					<div id="vlefthead">Code:</div>
+					<div id="vleftbody">
+						<input id="codeinput" type="text" onblur="$('#vleftresponse').html('');" onkeyup="submitcode();" onfocus="submitcode();" required />
+						<div id="vleftresponse"></div>	
+					</div>
+				</div>
+				<div id="vrightlane">
+					<div id="vrighthead">Visitor details</div>
+					<div id="vrightbody">
+						<table class="table table-hover">
+							<tr>
+								<th>Full name</th>
+								<td>Elisha Senoo</td>
+							</tr>
+							<tr>
+								<th>Mobile</th>
+								<td>0269441743</td>
+							</tr>
+							<tr>
+								<th>Purpose of visit</th>
+								<td>To say hi to Rich To say hi to Rich To say hi to Rich To say hi to Rich To say hi to Rich To say hi to Rich To say hi to Rich</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			
+			<div id="customization" class="mainboarder">
+				Customization
+			
+			</div>
+			
+			<div id="visits" class="mainboarder">
+				Visits
+				<div id="vtabholder">
+					<div id="pastvisits" class="vtab" onclick="visittab('pastvisits');">Past visits</div>
+					<div id="todayvisits" class="selectedvtab" onclick="visittab('todayvisits');">Today's visits</div>
+					<div id="futurevisits" class="vtab" onclick="visittab('futurevisits');">Future visits</div>
+				</div>
+				<div id="visitboard">
+					<div id="pastvisitsb" class="vboard">past visits</div>
+					<div id="todayvisitsb" class="vboard">today's visits</div>
+					<div id="futurevisitsb" class="vboard">future visits</div>
+				</div>
+			</div>
+			
+			<div id="messaging" class="mainboarder">
+				Messaging
+			
+			</div>
+			
+			<div id="analytics" class="mainboarder">
+				<div id="" class="atile">
+					<div id="" class="atilenum">
+						
+					</div>
+					<div id="" class="atilecap">
+						
+					</div>
+				</div>
+				<div id="" class="atile"></div>
+				<div id="" class="atile"></div>
+				<div id="" class="atile"></div>
+				<div id="" class="atile"></div>
+				<div id="" class="atile"></div>
+				<div id="" class="atile"></div>
+				<div id="" class="atile"></div>
+			</div>
+			
+		</div>
+	</div>
+	
+</body>
+
+</html>

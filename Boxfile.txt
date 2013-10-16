@@ -1,0 +1,3 @@
+db1: #component type & number 
+  name: guest           #component settings
+  
