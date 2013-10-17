@@ -47,7 +47,7 @@
                                           	</select>
                                           </div>
                                           <div>
-                                          	<span>Rows:</span>
+                                          	<span>Rows to show:</span>
                                           	<input type="text" id="rows1" value="'.$num_of_rows.'" onkeyup="get_visitors();"/>
                                           </div>
                                 </div>
