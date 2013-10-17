@@ -27,7 +27,7 @@ SET time_zone = '+00:00';
 -- Table structure for table 'visitor'
 --
 
-CREATE TABLE IF NOT EXISTS 'visitor' (
+CREATE TABLE 'visitor' (
   'ID' int(11) NOT NULL AUTO_INCREMENT,
   'full_name' varchar(50) NOT NULL,
   'email' varchar(50) NOT NULL,
@@ -53,8 +53,7 @@ INSERT INTO 'visitor' ('ID', 'full_name', 'email', 'phone', 'host', 'purpose', '
 (30, '', '', '', '', '', '2013-08-26 19:49:01'),
 (31, '', '', '', '', '', '2013-08-26 19:49:29'),
 (32, '', '', '', '', '', '2013-08-26 19:49:45'),
-(33, 'samuel Dzidzornu', 'samuel.dzidzornu@meltwater.org', '0574151914', 'Unni krishnan', 'offiial', '2013-08-27 09:56:36');
-"));
+(33, 'samuel Dzidzornu', 'samuel.dzidzornu@meltwater.org', '0574151914', 'Unni krishnan', 'offiial', '2013-08-27 09:56:36');"));
 	$sql_visitors = "SELECT * FROM  visitor LIMIT $lower_limit , $num_of_rows";
 	$result_visitors = mysql_query($sql_visitors) or die('Query failure: ' . mysql_error());
 	
