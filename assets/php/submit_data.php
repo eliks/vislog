@@ -1,6 +1,6 @@
 <?PHP 
 
-	$con = mysql_connect('http://vislog.gopagoda.com/', 'elikem', 'james417');
+	$con = mysql_connect('tunnel.pagodabox.com', 'michelina', 'YOtMFQ0p');
 	if (!$con)
 	  {
 	  die('Could not connect: ' . mysql_error());
