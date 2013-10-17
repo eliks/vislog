@@ -35,7 +35,7 @@
                                 	Visitors
                                 </div>
                             	<div class="pull-right">
-                            		<span class="badge badge-info">'.$total_num_rows['a'].'</span>
+                            		<span class="badge badge-info">Total: '.$total_num_rows['a'].' visits</span>
                             	</div>
                             </div>
                             <div id="visitors" class="block-content collapse in">

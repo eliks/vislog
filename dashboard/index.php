@@ -66,45 +66,8 @@
                     	</div>
                     <div class="row-fluid">
                         <!-- block -->
-                        <div id="dynamic" class="block">
-                            <div class="navbar navbar-inner block-header">
-                                <div class="muted pull-left">
-                                	Visitors
-                                </div>
-                            	<div class="pull-right">
-                            		<span class="badge badge-info">462</span>
-                            	</div>
-                            </div>
-                            <div id="visitors" class="block-content collapse in">
-                            	<div class="form-actions" id="visitors_data_controls">
-                                          <div>
-                                          	<span>Page:</span>
-                                          	<select id="select1" onchange="get_visitors();">
-                                          		<option>1</option>
-                                          		<option>2</option>
-                                          	</select>
-                                          </div>
-                                          <div>
-                                          	<span>Rows:</span>
-                                          	<input type="text" id="rows1" value="30" onkeydown="get_visitors();"/>
-                                          </div>
-                                </div>
-								<table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>Full Name<i class="caret"></i></th>
-                                                <th>Email Address<i class="caret"></i></th>
-                                                <th>Phone Number</th>
-                                                <th>Host</th>
-                                                <th>Purpose of visit</th>
-                                                <th>Actions</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="visitors_data">
-                                        </tbody>
-                                    </table>
-                            </div>
+                        <div id="dynamic" class="container block">
+                            
                         </div>
                         <!-- /block -->
                     </div>
