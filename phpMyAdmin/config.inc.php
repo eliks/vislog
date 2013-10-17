@@ -17,8 +17,8 @@ $i++;
 
 /* Authentication type and info */
 $cfg['Servers'][$i]['auth_type'] = 'config';
-$cfg['Servers'][$i]['host'] = 'tunnel.pagodabox.com';$cfg['Servers'][$i]['user'] = 'root';
-$cfg['Servers'][$i]['password'] = '';
+$cfg['Servers'][$i]['host'] = 'tunnel.pagodabox.com';$cfg['Servers'][$i]['user'] = 'michelina';
+$cfg['Servers'][$i]['password'] = 'YOtMFQ0p';
 $cfg['Servers'][$i]['extension'] = 'mysql';
 $cfg['Servers'][$i]['AllowNoPassword'] = true;
 $cfg['Lang'] = '';
