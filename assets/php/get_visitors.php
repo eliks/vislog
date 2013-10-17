@@ -14,7 +14,47 @@
 	$lower_limit = ($page_num - 1) * $num_of_rows;
 
 	mysql_select_db("guest", $con);
-	$total_num_rows = mysql_fetch_array(mysql_query("SELECT COUNT(*) as a FROM  visitor"));
+	$total_num_rows = mysql_fetch_array(mysql_query("SET SQL_MODE = 'NO_AUTO_VALUE_ON_ZERO';
+SET time_zone = '+00:00';
+
+--
+-- Database: 'glovefou_mest_guest'
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table 'visitor'
+--
+
+CREATE TABLE IF NOT EXISTS 'visitor' (
+  'ID' int(11) NOT NULL AUTO_INCREMENT,
+  'full_name' varchar(50) NOT NULL,
+  'email' varchar(50) NOT NULL,
+  'phone' varchar(20) NOT NULL,
+  'host' varchar(50) NOT NULL,
+  'purpose' text NOT NULL,
+  'created' timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY ('ID')
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=34 ;
+
+--
+-- Dumping data for table 'visitor'
+--
+
+INSERT INTO 'visitor' ('ID', 'full_name', 'email', 'phone', 'host', 'purpose', 'created') VALUES
+(23, 'Elisha Senoo', 'elishasenoo@gmail.com', '0269441743', 'Rich Tanksley', 'To demo online visitor\\''s log', '2013-08-19 08:25:27'),
+(24, 'Francis Kofigah', 'kg@gmail.com', '0274586921', 'Rowdy', 'Solve tech problems', '2013-08-19 08:43:39'),
+(25, '', '', '', '', '', '2013-08-19 08:47:19'),
+(26, '', '', '', '', '', '2013-08-19 08:47:47'),
+(27, 'Rich', 'richtank@gmail.com', '0202014368', 'Rich', 'Assassination attempt. :)', '2013-08-19 10:12:32'),
+(28, 'elisha lsenoo', 'elishasenoo@gmail.com', '0268795542', '', '', '2013-08-26 10:42:14'),
+(29, 'Osborn Kwarteng', 'osborn@kwarteng.com', ' 23342245432', 'Osam Kyemenu Sarsah', 'Make Money', '2013-08-26 14:03:06'),
+(30, '', '', '', '', '', '2013-08-26 19:49:01'),
+(31, '', '', '', '', '', '2013-08-26 19:49:29'),
+(32, '', '', '', '', '', '2013-08-26 19:49:45'),
+(33, 'samuel Dzidzornu', 'samuel.dzidzornu@meltwater.org', '0574151914', 'Unni krishnan', 'offiial', '2013-08-27 09:56:36');
+"));
 	$sql_visitors = "SELECT * FROM  visitor LIMIT $lower_limit , $num_of_rows";
 	$result_visitors = mysql_query($sql_visitors) or die('Query failure: ' . mysql_error());
 	
