@@ -1,6 +1,6 @@
 <?PHP 
 
-	$con = mysql_connect('localhost', 'elikem', 'james417');
+	$con = mysql_connect('tunnel.pagodabox.com:3306', 'michelina', 'YOtMFQ0p');
 	if (!$con)
 	  {
 	  die('Could not connect: ' . mysql_error());
