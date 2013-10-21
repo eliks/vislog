@@ -25,8 +25,8 @@ $cfg['Servers'][$i]['AllowNoPassword'] = true;
 $cfg['Lang'] = '';
 
 /* User for advanced features */
-$cfg['Servers'][$i]['controluser'] = 'root';
-$cfg['Servers'][$i]['controlpass'] = '';
+$cfg['Servers'][$i]['controluser'] = 'michelina';
+$cfg['Servers'][$i]['controlpass'] = 'YOtMFQ0p';
 
 /* Advanced phpMyAdmin features */
 $cfg['Servers'][$i]['pmadb'] = 'phpmyadmin';
