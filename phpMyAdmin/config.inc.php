@@ -17,15 +17,16 @@ $i++;
 
 /* Authentication type and info */
 $cfg['Servers'][$i]['auth_type'] = 'config';
-$cfg['Servers'][$i]['host'] = 'tunnel.pagodabox.com';$cfg['Servers'][$i]['user'] = 'michelina';
-$cfg['Servers'][$i]['password'] = 'YOtMFQ0p';
+$cfg['Servers'][$i]['host'] = 'tunnel.pagodabox.com';
+$cfg['Servers'][$i]['user'] = 'root';
+$cfg['Servers'][$i]['password'] = '';
 $cfg['Servers'][$i]['extension'] = 'mysql';
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
+$cfg['Servers'][$i]['AllowNoPassword'] = true;
 $cfg['Lang'] = '';
 
 /* User for advanced features */
-$cfg['Servers'][$i]['controluser'] = 'michelina';
-$cfg['Servers'][$i]['controlpass'] = 'YOtMFQ0p';
+$cfg['Servers'][$i]['controluser'] = 'root';
+$cfg['Servers'][$i]['controlpass'] = '';
 
 /* Advanced phpMyAdmin features */
 $cfg['Servers'][$i]['pmadb'] = 'phpmyadmin';
