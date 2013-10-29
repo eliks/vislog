@@ -1,6 +1,8 @@
 <?PHP 
 
-	$con = mysql_connect('tunnel.pagodabox.com', 'michelina', 'YOtMFQ0p');
+	//$con = mysql_connect('tunnel.pagodabox.com', 'michelina', 'YOtMFQ0p');
+	$con = mysql_connect('localhost:3308', 'elikem', 'james417') or die('Could not connect: ' . mysql_error());
+
 	if (!$con)
 	  {
 	  die('Could not connect: ' . mysql_error());
@@ -13,7 +15,7 @@
 	$upper_limit = $page_num * $num_of_rows;
 	$lower_limit = ($page_num - 1) * $num_of_rows;
 
-	mysql_select_db("guest", $con);
+	mysql_select_db("vislog", $con) or die('Could not select db: ' . mysql_error());
 	$total_num_rows = mysql_fetch_array(mysql_query("SELECT COUNT(*) as a FROM  visitor"));
 	$sql_visitors = "SELECT * FROM  visitor LIMIT $lower_limit , $num_of_rows";
 	$result_visitors = mysql_query($sql_visitors) or die('Query failure: ' . mysql_error());
