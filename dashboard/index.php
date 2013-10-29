@@ -43,9 +43,15 @@
                                 </ul>
                             </li>
                         </ul>
-                        <ul class="nav">
-                            <li class="active">
-                                <a href="#">Dashboard</a>
+                        <ul id="mainMenu" class="nav">
+                            <li id="mmDash" class="active" onclick="mainMenuToggle('mmDash');">
+                                <a href="#Dashboard">Dashboard</a>
+                            </li>
+                            <li id="mmConf" class="" onclick="mainMenuToggle('mmConf');">
+                                <a href="#Configuration">Configuration</a>
+                            </li>
+                            <li id="mmCont" class="" onclick="mainMenuToggle('mmCont');">
+                                <a href="#Contacts">Contacts List</a>
                             </li>
                         </ul>
                     </div>
@@ -53,8 +59,8 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row-fluid">
+        <div id="mmDashPage" class="tabPage container-fluid">
+            
                 
                 <!--/span-->
                 <div class="span9" id="content">
@@ -110,7 +116,15 @@
                     </div>
                 </div>
             </div>
-            <hr>
+            <div id="mmConfPage" class="tabPage container-fluid">
+            	conf page
+            	hosts crud 
+            	form setup
+            </div>
+            <div id="mmContPage" class="tabPage container-fluid">
+            	cont page
+            </div>
+            <hr />
             <footer>
                 <p>&copy; Elisha Senoo 2013</p>
             </footer>
@@ -121,6 +135,12 @@
         <script src="vendors/easypiechart/jquery.easy-pie-chart.js"></script>
         <script src="assets/scripts.js"></script>
         <script>
+        //required for proper functioning of menu tabs
+        //hide all pages
+		$('.tabPage').hide();
+		//show dashboard page
+		$('#mmDashPage').show();
+		
         $(function() {
             // Easy pie charts
             $('.chart').easyPieChart({animate: 1000});

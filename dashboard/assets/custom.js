@@ -38,3 +38,20 @@ function get_visitors(sort_by){
 	  xmlhttp.open("GET","../assets/php/get_visitors.php?page_num="+page_num+"&num_of_rows="+num_of_rows+"&sort_by="+sort_by,true);
 	  xmlhttp.send();
 }
+
+
+function mainMenuToggle(tab){
+
+	//deactivate all tabs
+	$('#mainMenu.nav li').attr('class', '');
+	
+	//hide all pages
+	$('.tabPage').hide();
+	
+	//show selected page
+	$('#'+tab+'Page').show();
+	
+	//activate clicked tab
+	$('#mainMenu.nav li#'+tab).attr('class','active');
+	
+}
