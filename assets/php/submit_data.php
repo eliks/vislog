@@ -27,7 +27,7 @@
 				"\nHost's Name: ".$host.
 				"\nPurpose: ".$purpose.
 				"\n\nTime: ".date("l jS \of F Y h:i:s A");
-	$from = "client@vislog.com";
+	$from = "client@vislog.gopagoda.com";
 	$headers = "From:" . $from;
 	mail($to,$subject,$message,$headers);
 	
