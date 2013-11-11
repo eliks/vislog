@@ -16,7 +16,14 @@
         <script type="text/javascript" src="vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script src="assets/custom.js" id="mine"></script>
     </head>
-    
+  
+  <?php
+  
+  		//if logged in
+  		if(TRUE){
+  
+  ?>
+  
     <body onload="get_visitors();">
         <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
@@ -115,6 +122,21 @@
                 <p>&copy; Elisha Senoo 2013</p>
             </footer>
         </div>
+        
+        <?php 
+        
+        } else {  //show login page
+				
+        	?>
+        	
+        	
+        	
+        	<?php
+			
+        }
+        
+        ?>
+        
         <!--/.fluid-container-->
         <script src="vendors/jquery-1.9.1.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>

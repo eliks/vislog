@@ -1,10 +1,12 @@
 <?PHP 
 
-	$con = mysql_connect('localhost', 'root', 'james417');
-	if (!$con)
-	  {
-	  die('Could not connect: ' . mysql_error());
-	  }
+	// $con = mysql_connect('localhost', 'root', 'james417');
+	// if (!$con)
+	  // {
+	  // die('Could not connect: ' . mysql_error());
+	  // }
+	  
+	require '../../connection/connection.php';
 	  
 	$page_num = mysql_real_escape_string($_GET['page_num']);
 	$num_of_rows = mysql_real_escape_string($_GET['num_of_rows']);
@@ -13,7 +15,7 @@
 	$upper_limit = $page_num * $num_of_rows;
 	$lower_limit = ($page_num - 1) * $num_of_rows;
 
-	mysql_select_db("guest", $con);
+	// mysql_select_db("guest", $con);
 	$total_num_rows = mysql_fetch_array(mysql_query("SELECT COUNT(*) as a FROM  visitor"));
 	$sql_visitors = "SELECT * FROM  visitor LIMIT $lower_limit , $num_of_rows";
 	$result_visitors = mysql_query($sql_visitors) or die('Query failure: ' . mysql_error());
