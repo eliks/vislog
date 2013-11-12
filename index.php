@@ -30,10 +30,29 @@
     	</div>
     	<div id="about_you">
     		<span>Tell us about yourself...</span>
-    		<div class="field">
-    			<input type="text" id="fname" class="myinputs" placeholder="Your full name" />
-    			<input type="text" id="email" class="myinputs" placeholder="Your email address" />
-    			<input type="text" id="phone" class="myinputs" placeholder="Your phone number" />
+    		<div class="field_short">
+    			<input type="text" id="fname" class="myinputs_short" placeholder="Your full name" />
+    			<input type="text" id="email" class="myinputs_short" placeholder="Your email address" />
+    			<input type="text" id="phone" class="myinputs_short" placeholder="Your phone number" />
+    		</div>
+    		<div id="or">
+    			<div id="mybar"></div>
+    			<div id="or_text">OR</div>
+    			<div id="mybar"></div>
+    		</div>
+    		<div id="social">
+    			<div class="soc_icon done">
+    				<i class="icon-pencil"></i>
+    			</div>
+    			<div class="soc_icon">
+    				<i class="icon-pencil"></i>
+    			</div>
+    			<div class="soc_icon done">
+    				<i class="icon-pencil"></i>
+    			</div>
+    			<div class="soc_icon">
+    				<i class="icon-pencil"></i>
+    			</div>
     		</div>
     	</div>
     	<div id="about_visit">
