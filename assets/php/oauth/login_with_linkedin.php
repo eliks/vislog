@@ -16,7 +16,7 @@
 	$client->debug = 1;
 	$client->debug_http = 1;
 	$client->server = 'LinkedIn';
-	$client->redirect_uri = 'http://54.201.19.221/libs/oauth/login_with_linkedin.php';
+	$client->redirect_uri = 'http://54.201.19.221/assets/php/oauth/login_with_linkedin.php';
 
 	$client->client_id = '77ljoiby69vmrr'; $application_line = __LINE__;
 	$client->client_secret = 'rSOdB6UIgSj2wAVl';
