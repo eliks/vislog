@@ -148,7 +148,7 @@ function sub_inputs(){
 							    	'</div>'+
 							    	'<div id="links">'+
 							    		'<a href="http://www.meltwater.org/"><span>You can visit our Web Site<br />http://www.meltwater.org/</span></a>'+
-							    		'<a href="http://vislog.herokuapp.com/"><span>Back to Visitors Log</span></a>'+
+							    		'<a href="http://www.vislog.gopagoda.com/"><span>Back to Visitors Log</span></a>'+
 							    	'</div>'+
 							    	'<div id="ft1">'+
 							    		'<span>Visitor\'s Log for MEST - East Legon Campus</span>'+

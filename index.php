@@ -77,6 +77,7 @@
     <script src="assets/js/jquery-latest.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/typeahead.js"></script>
     <script src="assets/js/custom.js"></script>
 
 </body></html>

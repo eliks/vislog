@@ -50,9 +50,15 @@
                                 </ul>
                             </li>
                         </ul>
-                        <ul class="nav">
-                            <li class="active">
-                                <a href="#">Dashboard</a>
+                        <ul id="mainMenu" class="nav">
+                            <li id="mmDash" class="active" onclick="mainMenuToggle('mmDash');">
+                                <a href="#Dashboard">Dashboard</a>
+                            </li>
+                            <li id="mmConf" class="" onclick="mainMenuToggle('mmConf');">
+                                <a href="#Configuration">Configuration</a>
+                            </li>
+                            <li id="mmCont" class="" onclick="mainMenuToggle('mmCont');">
+                                <a href="#Contacts">Contacts List</a>
                             </li>
                         </ul>
                     </div>
@@ -60,8 +66,8 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row-fluid">
+        <div id="mmDashPage" class="tabPage container-fluid">
+            
                 
                 <!--/span-->
                 <div class="span9" id="content">
@@ -73,51 +79,22 @@
                     	</div>
                     <div class="row-fluid">
                         <!-- block -->
-                        <div id="dynamic" class="block">
-                            <div class="navbar navbar-inner block-header">
-                                <div class="muted pull-left">
-                                	Visitors
-                                </div>
-                            	<div class="pull-right">
-                            		<span class="badge badge-info">462</span>
-                            	</div>
-                            </div>
-                            <div id="visitors" class="block-content collapse in">
-                            	<div class="form-actions" id="visitors_data_controls">
-                                          <div>
-                                          	<span>Page:</span>
-                                          	<select id="select1" onchange="get_visitors();">
-                                          		<option>1</option>
-                                          		<option>2</option>
-                                          	</select>
-                                          </div>
-                                          <div>
-                                          	<span>Rows:</span>
-                                          	<input type="text" id="rows1" value="30" onkeydown="get_visitors();"/>
-                                          </div>
-                                </div>
-								<table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>Full Name<i class="caret"></i></th>
-                                                <th>Email Address<i class="caret"></i></th>
-                                                <th>Phone Number</th>
-                                                <th>Host</th>
-                                                <th>Purpose of visit</th>
-                                                <th>Actions</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="visitors_data">
-                                        </tbody>
-                                    </table>
-                            </div>
+                        <div id="dynamic" class="container block">
+                            
                         </div>
                         <!-- /block -->
                     </div>
                 </div>
             </div>
-            <hr>
+            <div id="mmConfPage" class="tabPage container-fluid">
+            	conf page
+            	hosts crud 
+            	form setup
+            </div>
+            <div id="mmContPage" class="tabPage container-fluid">
+            	cont page
+            </div>
+            <hr />
             <footer>
                 <p>&copy; Elisha Senoo 2013</p>
             </footer>
@@ -143,6 +120,12 @@
         <script src="vendors/easypiechart/jquery.easy-pie-chart.js"></script>
         <script src="assets/scripts.js"></script>
         <script>
+        //required for proper functioning of menu tabs
+        //hide all pages
+		$('.tabPage').hide();
+		//show dashboard page
+		$('#mmDashPage').show();
+		
         $(function() {
             // Easy pie charts
             $('.chart').easyPieChart({animate: 1000});
