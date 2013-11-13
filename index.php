@@ -11,6 +11,7 @@
     <link href="http://cleancanvas.herokuapp.com/css/bootstrap-overrides.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
     <link href="assets/css/css" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css" media="screen, projection">
     <link rel="stylesheet" href="assets/css/index.css" type="text/css" media="screen">
@@ -41,17 +42,19 @@
     			<div id="mybar"></div>
     		</div>
     		<div id="social">
-    			<div class="soc_icon done">
-    				<i class="icon-pencil"></i>
+    			<a href="assets/php/oauth/login_with_linkedin.php">
+	    			<div id="soc_icon_linkedin" class="soc_icon" onclick="">
+	    				<i class="fa fa-linkedin-square"></i>
+	    			</div>
+    			</a>
+    			<div id="soc_icon_twitter" class="soc_icon" onclick="">
+    				<i class="fa fa-twitter-square"></i>
     			</div>
-    			<div class="soc_icon">
-    				<i class="icon-pencil"></i>
+    			<div id="soc_icon_google" class="soc_icon" onclick="">
+    				<i class="fa fa-google-plus-square"></i>
     			</div>
-    			<div class="soc_icon done">
-    				<i class="icon-pencil"></i>
-    			</div>
-    			<div class="soc_icon">
-    				<i class="icon-pencil"></i>
+    			<div id="soc_icon_facebook" class="soc_icon" onclick="">
+    				<i class="fa fa-facebook-square"></i>
     			</div>
     		</div>
     	</div>

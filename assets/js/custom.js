@@ -160,3 +160,49 @@ function sub_inputs(){
 		$('#welcome span').css( "color", "red" );
 	}
 }
+
+function  soc_icon_click(id){
+	
+	var file;
+	if( id == "linkedin"){
+		
+		file = 'login_with_linkedin.php';
+		
+	} else if(id == "twitter"){
+		
+		file = 'login_with_twitter.php';
+		
+	} else if(id == "google"){
+		
+		file = 'login_with_google.php';
+		
+	} else if(id == "facebook"){
+		
+		file = 'login_with_facebook.php';
+		
+	}
+		
+		if (window.XMLHttpRequest)
+		  {// code for IE7+, Firefox, Chrome, Opera, Safari
+		  xmlhttp=new XMLHttpRequest();
+		  }
+		else
+		  {// code for IE6, IE5
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  }
+		xmlhttp.onreadystatechange=function()
+		  {
+		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		    {
+		    document.getElementById('mainwrapper').innerHTML=xmlhttp.responseText;
+		    // response = xmlhttp.responseText;
+		    }
+		  }
+		  
+	  xmlhttp.open("GET","assets/php/oauth/login_with_linkedin.php",true);
+	  xmlhttp.send();
+	  
+	alert('soc_icon_' + id);
+	$("#soc_icon_" + id + " i").css( "color", "blue" );
+	// $("#soc_icon_" + id).attr(class, $("#soc_icon_" + id).attr(class) + " done");
+}

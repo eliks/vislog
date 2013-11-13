@@ -160,13 +160,8 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 	width: 48px;
 	height: 24px;
 	border-radius: 4px;
-	border: 1px solid #7bd1f4;
-	margin: 1px 5px 4px 0;
-	cursor: pointer;
-}
-
-.soc_icon.done {
-	background-color: #7bd1f4;
+	border: 1px solid transparent;
+	margin: 1px 15px 4px 0;
 }
 
 .field input {
@@ -267,15 +262,18 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 
 #social .soc_icon i {
 	margin: 3px 0 0 18px;
-	/*color: red;*/
+	color: #7bd1f4;
+	font-size: 25px;
+	cursor: pointer;
 }
+
 
 #mybar {
 	width:1px;
 	height: 46px;
 	border: 1px solid #7bd1f4;
 	margin: 0 0 0 12px;
-	background-color: #7bd1f4
+	background-color: #7bd1f4;
 }
 
 #or_text {
