@@ -73,9 +73,11 @@
 		echo '<ul>';
 		echo '<li>'.HtmlSpecialChars($user->firstName).'</li>';
 		echo '<li>'.HtmlSpecialChars($user->lastName).'</li>';
-		echo '<li>'.HtmlSpecialChars($user->maidenName).'</li>';
-		echo '<li>'.HtmlSpecialChars($user->formattedName).'</li>';
+		echo '<li>'.HtmlSpecialChars($user->location->name).'</li>';
+		echo '<li>'.HtmlSpecialChars($user->location->country->code).'</li>';
 		echo '<li>'.HtmlSpecialChars($user->headline).'</li>';
+		echo '<li>'.HtmlSpecialChars($user->summary).'</li>';
+		echo '<li>'.HtmlSpecialChars($user->email).'</li>';
 		echo '</ul>';
 		echo '<pre>', HtmlSpecialChars(print_r($user, 1)), '</pre>';
 ?>
