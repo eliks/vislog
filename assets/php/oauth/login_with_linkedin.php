@@ -68,7 +68,7 @@
 </head>
 <body>
 <?php
-		echo '<h1>', HtmlSpecialChars($user->firstName), 
+		echo '<h1>Wow ', HtmlSpecialChars($user->firstName), 
 			' you have logged in successfully with LinkedIn!</h1>';
 		echo '<ul>';
 		echo '<li>'.HtmlSpecialChars($user->firstName).'</li>';
@@ -76,10 +76,6 @@
 		echo '<li>'.HtmlSpecialChars($user->maidenName).'</li>';
 		echo '<li>'.HtmlSpecialChars($user->formattedName).'</li>';
 		echo '<li>'.HtmlSpecialChars($user->headline).'</li>';
-		echo '<li>'.HtmlSpecialChars($user->firstName).'</li>';
-		echo '<li>'.HtmlSpecialChars($user->firstName).'</li>';
-		echo '<li>'.HtmlSpecialChars($user->firstName).'</li>';
-		echo '<li>'.HtmlSpecialChars($user->firstName).'</li>';
 		echo '</ul>';
 		echo '<pre>', HtmlSpecialChars(print_r($user, 1)), '</pre>';
 ?>
